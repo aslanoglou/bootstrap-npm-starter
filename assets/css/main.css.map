@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "starter.css",
+	"file": "main.css",
 	"sources": [
-		"../../scss/starter.scss",
+		"../../scss/main.scss",
 		"../../node_modules/bootstrap/scss/_functions.scss",
 		"../../node_modules/bootstrap/scss/_variables.scss",
 		"../../node_modules/bootstrap/scss/_mixins.scss",

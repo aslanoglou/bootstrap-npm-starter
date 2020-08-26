@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Lato_Light';
+  src: url("../fonts/lato-Light.ttf") format("truetype"); }
+
+.lato_regular_base, .regular_10, .regular_11 {
+  font-family: 'Montserrat_Regular';
+  color: #000; }
+
+.regular_10 {
+  font-size: 10px; }
+
+.regular_11 {
+  font-size: 11px; }
+
+h1 {
+  display: -ms-flexbox;
+  display: flex;
+  color: #F7F7F7;
+  border-radius: 5px; }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      color: #e52600; } }
+/*# sourceMappingURL=styles.css.map */

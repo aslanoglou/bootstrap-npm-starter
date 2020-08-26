@@ -12,11 +12,12 @@
   "homepage": "https://github.com/twbs/bootstrap-npm-starter#readme",
   "scripts": {
     "build": "npm run css",
-    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
-    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
-    "css-purge": "purgecss --css assets/css/starter.css --content index.html --output assets/css/",
+    "css-compile": "node-sass --include-path node_modules  --source-map true --source-map-contents true --precision 6 scss -o css/",
+    "css-prefix": "postcss --replace css/main.css --use autoprefixer --map",
+    "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
+    "css-purge": "purgecss --css css/main.css --content index.html --output css/",
     "css": "npm run css-compile && npm run css-prefix",
-    "server": "serve --listen 3000",
+    "server": "serve --listen 8080",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "test": "npm run css"
   },
@@ -31,16 +32,16 @@
   "author": "mdo",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
-    "popper.js": "1.16.1-lts"
+    "popper.js": "1.16.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
+    "autoprefixer": "^9.8.6",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "postcss-cli": "^7.1.1",
-    "purgecss": "^2.1.2",
-    "serve": "^11.3.0"
+    "purgecss": "^2.3.0",
+    "serve": "^11.3.2"
   }
 }

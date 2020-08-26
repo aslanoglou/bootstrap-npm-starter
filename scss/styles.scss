@@ -1,0 +1,13 @@
+@import 'fonts';
+@import 'typography';
+@import 'colors';
+@import 'responsive_mixin';
+
+h1 {   
+    display: flex;
+    color: $primary_white;
+    @include responsive_mobile(){
+        color: $red-color;
+    }
+    border-radius: 5px;
+}
